@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Embedded JavaScript</title>
+</head>
+<body>
+    <h1>Your Embedded JavaScript Example</h1>
+    
+    <!-- Embed your JavaScript code here -->
+    <script>
+        var style = 1, script = document.createElement("script");
+        script.src="https://speak4.app/s4.js?embedkey=ofDHcnbMHDZAgfJPB7pC3g%3D%3D&style=" + (style ? 1 : 0) + "&ts=" + new Date().getTime();
+        document.currentScript.after(script);
+    </script>
+    
+    <p>This is your HTML content with embedded JavaScript.</p>
+</body>
+</html>
